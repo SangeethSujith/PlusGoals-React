@@ -1,7 +1,7 @@
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { CheckCircleIcon, KeyIcon } from "@heroicons/react/24/solid";
 import { useRef } from "react";
-
+import MainLogo from './assets/plusgoals_logo.svg'
 export default function App() {
   const emailRef = useRef(null)
   const passwordRef = useRef(null)
@@ -11,7 +11,9 @@ export default function App() {
     <div className="min-h-screen bg-slate-400/10  flex justify-center items-center">
       <div className="bg-white p-14 shadow-md rounded-lg">
         <div className=" text-center mb-10">
-          <h1 className="bg-red-400/10 p-4 mb-2  ">Logo here</h1>
+        <div className="flex flex-col items-center">
+          <img className="pb-4" src={MainLogo} alt='svg'/>
+          </div>
           <p>Login to access your PlusGoals Account</p>
         </div>
         <div className="space-y-4">
